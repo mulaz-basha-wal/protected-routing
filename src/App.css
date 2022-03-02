@@ -1,38 +1,153 @@
+body {
+    background: linear-gradient(to left, #c31432, #240b36);
+}
+.headerContainer {
+    height: 40px;
+    margin: 0px;
+    padding: 10px;
+    text-align: right;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.check {
+    padding-left: 10px;
+    margin: 0px;
+}
+.homeContainer {
+    color: white;
+    padding: 10% 0px;
+}
+input,
+.registerButton {
+    width: 95%;
+    height: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: block;
+    font-weight: bold;
+}
+input:focus {
+    border: 5px solid cyan;
+    background-color: black;
+    color: white;
+}
+.registrationFormContainer,
+.loginContainer {
+    width: 25%;
+    padding: 20px 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: 5px solid darkcyan;
+}
+.regHeading {
+    color: white;
+}
+.registerButton {
+    width: 100px;
+    height: 40px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #42b72a;
+    border-radius: 15px;
+}
+.linksContainer {
+    padding: 20px;
+}
+.Highlight {
+    color: green;
+}
+.homePara {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
 .App {
-  text-align: center;
+    text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link {
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    color: black;
+    font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.register {
+    border-radius: 10px;
+    background-color: #42b72a;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login {
+    border-radius: 10px;
+    background-color: #1877f2;
+    border: none;
+    width: 80px;
+    height: 40px;
 }
-
-.App-link {
-  color: #61dafb;
+.validationError {
+    color: red;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputBox {
+    margin: 15px auto;
+}
+.already {
+    color: white;
+    text-align: right;
+}
+.arleadylink {
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+.memberContainer {
+    margin-top: 10%;
+}
+span {
+    padding: 10px;
+    margin: auto 10px;
+}
+.logout {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin: 10px auto;
+    font-weight: bold;
+    font-size: 18px;
+}
+table {
+    width: 30%;
+    margin: 10px auto;
+}
+th {
+    background-color: #1877f2;
+    padding: 10px;
+}
+td {
+    padding: 10px;
+    color: black;
+    background-color: white;
+}
+@media (max-width: 620px) {
+    .homeContainer {
+        color: white;
+        padding: 30% 0px;
+    }
+    .registrationFormContainer,
+    .loginContainer {
+        width: 70%;
+    }
+    .headerContainer {
+        height: 100px;
+    }
 }
